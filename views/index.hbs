@@ -1,12 +1,7 @@
 <h1>{{title}}</h1>
 <p> Welcome to {{title}}</p>
-{{# if condition }}
-    condition is match
-{{ else }}
-    condition is not match
-{{/if}}
-<ul>
-{{# each anyArray as | val key |}}   
-    <li>{{ key }}: {{ val }}</li>
-{{/each}}
-</ul>
+
+<form action="/user/submit" method="POST">
+    <input type="text" name="id">
+    <button type="submit">Submit</button>
+</form>
